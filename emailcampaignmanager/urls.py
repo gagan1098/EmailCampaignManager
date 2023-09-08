@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("campaignmanager/", include("campaignmanager.urls")),
-    path("usermanager/", include("usermanager.urls")),
+    path("campaignmanager", include("campaignmanager.urls")),
+    path("usermanager", include("usermanager.urls")),
     path('admin/', admin.site.urls),
 ]
